@@ -6,6 +6,7 @@ This project involves an exploratory data analysis (EDA) on world life expectanc
 ## Table of Contents
 - [Introduction](#introduction)
 - [Dataset](#dataset)
+- [Data Cleaning](#data-Cleaning)
 - [Installation](#installation)
 - [Usage](#usage)
 - [Analysis](#analysis)
@@ -23,6 +24,25 @@ The dataset used for this analysis is `WorldLifeExpectancy.csv`. It contains dat
 - `Year`: Year of the recorded data.
 - `LifeExpectancy`: Average life expectancy in that year.
 - `OtherColumns`: Any other relevant columns in the dataset.
+
+## Data Cleaning
+The dataset required some cleaning to ensure accuracy and consistency. The following steps were taken to clean the data:
+
+1. **Remove Duplicates:**
+   - Identify and remove any duplicate rows.
+
+2. **Handle Missing Values:**
+   - Investigate and handle missing values appropriately (e.g., imputation, removal).
+
+3. **Standardize Formats:**
+   - Ensure consistent formatting for columns like dates and country names.
+
+4. **Correct Errors:**
+   - Identify and correct any obvious errors in the data.
+
+### Data Cleaning Script
+The data cleaning process is documented in the `data_cleaning/clean_data.sql` script. You can find the script [here](data_cleaning/clean_data.sql).
+
 
 ## Installation
 To set up the project locally, follow these steps:
