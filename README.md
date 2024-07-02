@@ -18,10 +18,33 @@ This project involves an exploratory data analysis (EDA) on world life expectanc
 Provide a brief introduction to your project, explaining the motivation behind it and the key questions you aim to answer through your analysis.
 
 ## Dataset
-Describe the dataset used for the analysis. Include details such as the source, the period it covers, and the key features of the dataset.
+The dataset used for this analysis is `WorldLifeExpectancy.csv`. It contains data on life expectancy across various countries and regions. Key columns include:
+- `Country`: Name of the country.
+- `Year`: Year of the recorded data.
+- `LifeExpectancy`: Average life expectancy in that year.
+- `OtherColumns`: Any other relevant columns in the dataset.
 
 ## Installation
-Explain how to set up the project locally. Include steps to clone the repository and any other necessary setup instructions.
-```bash
-git clone https://github.com/yourusername/world-life-expectancy-eda.git
+To set up the project locally, follow these steps:
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/meetpatel0090/world-life-expectancy-eda.git
+    ```
+2. Ensure you have MySQL and MySQL Workbench installed.
+
+## Usage
+To use the SQL scripts provided:
+1. Open MySQL Workbench and connect to your MySQL server.
+2. Import the `WorldLifeExpectancy.csv` data into a MySQL table.
+3. Run the provided SQL scripts to perform exploratory data analysis.
+
+Example of importing the data into MySQL:
+```sql
+LOAD DATA INFILE '/path/to/WorldLifeExpectancy.csv'
+INTO TABLE LifeExpectancy
+FIELDS TERMINATED BY ','
+ENCLOSED BY '"'
+LINES TERMINATED BY '\n'
+IGNORE 1 ROWS;
+
 
